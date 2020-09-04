@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="continer-fluid">
+        <div class="row justify-content-center">
+            <h1>Rock Paper Scissors Game</h1>
+        </div>
+        <div class="row justify-content-center centered">
+            <div class="col-sm">
+                <h2>You</h2>
+                <h1 id="user-score">0</h1>
+                <div class="col-6 auto-margin">
+                    <button id="user-move-icon" type="button" class="btn move-display-btn btn-primary btn-lg btn-block">
+                        <h1>?</h1>
+                    </button>
+                    <!-- <h3 id="user-move-text">?</h3> -->
+                </div>
+            </div>
+            <div class="col-sm">
+                <h2>Computer</h2>
+                <h1 id="computer-score">0</h1>
+                <div class="col-6 auto-margin">
+                    <button id="computer-move-icon" type="button" class="btn move-display-btn btn-danger btn-lg btn-block">
+                        <h1>?</h1>
+                    </button>
+                    <!-- <h3 id="computer-move-text">?</h3> -->
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <h1 class="text">
+                Make your move!
+            </h1>
+        </div>
+        <div class="row justify-content-center">
+            <h4 id="result" class="text">
+                 
+            </h4>
+        </div>
+        <div class="row justify-content-center fixed-bottom" id="selection-row">
+            <div class="col-4">
+                <button id="rock-btn" class="btn btn-secondary btnlg btn-block selection-block">Rock</button>
+            </div>
+            <div class="col-4">
+                <button id="paper-btn" class="btn btn-secondary btnlg btn-block selection-block">Paper</button>
+            </div>
+            <div class="col-4">
+                <button id="scissors-btn" class="btn btn-secondary btnlg btn-block selection-block">Scissors</button>
+            </div>
+        </div>
+        <div class="row justify-content-center fixed-bottom hidden" id="game-over-row">
+            <div class="col-4">
+                <button id="restart-btn" class="btn btn-secondary btnlg btn-block selection-block">Play Again?</button>
+            </div>
+        </div>
+        
+    </div>
     
-    <script src="main.js"></script>
+ 
+    <script src="main-v2.js"></script>
 </body>
 </html>
