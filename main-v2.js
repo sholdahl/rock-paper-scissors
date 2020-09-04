@@ -11,6 +11,7 @@ let resultDisplay = document.querySelector("#result");
 let selectionRow = document.querySelector("#selection-row");
 let gameOverRow = document.querySelector("#game-over-row");
 let restartBtn = document.querySelector("#restart-btn");
+let moveText = document.querySelector("#move");
 
 let playerScore = 0;
 let computerScore = 0;
@@ -63,6 +64,7 @@ scissorsBtn.addEventListener("click", function () {
 restartBtn.addEventListener('click', () => {
     gameOverRow.classList.toggle('hidden');
     selectionRow.classList.toggle('hidden');
+    moveText.classList.toggle('hidden');
     playerScore = 0;
     computerScore = 0;
     updateDisplay("?", "?", playerScore, computerScore);
@@ -87,6 +89,7 @@ function checkForWinner(pScore, cScore) {
         }
         gameOverRow.classList.toggle('hidden');
         selectionRow.classList.toggle('hidden');
+        moveText.classList.toggle('hidden');
     }
 }
 // game()
